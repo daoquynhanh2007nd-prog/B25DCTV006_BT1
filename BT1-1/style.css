@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+header, footer {
+    background-color: #b22222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: #ddd;
+    color: #b22222;
+}
+
+main {
+    padding: 30px 20px;
+    text-align: center;
+    min-height: 50vh;
+}
+
+.noidung-tab {
+    display: none; 
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.noidung-tab.active {
+    display: block;
+}
+
+#loi-chao {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #b22222;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Hiệu ứng mờ dần khi chuyển tab */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

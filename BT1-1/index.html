@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Cá Nhân Của Tôi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Trang Cá Nhân</h1>
+    </header>
+
+    <nav id="menu">
+        <a href="#" data-target="trang-chu" class="active">Trang chủ</a>
+        <a href="#" data-target="profile">Profile</a>
+        <a href="#" data-target="du-an">Dự án</a>
+        <a href="#" data-target="lien-he">Liên hệ</a>
+    </nav>
+
+    <main>
+        <button id="btn-doi-mau">Đổi màu nền (Dark Mode)</button>
+
+        <div id="trang-chu" class="noidung-tab active">
+            <h2>Trang chủ</h2>
+            <p id="loi-chao"></p>
+            <p>Chào mừng bạn đến với không gian cá nhân của tôi!</p>
+        </div>
+
+        <div id="profile" class="noidung-tab">
+            <h2>Giới thiệu</h2>
+            <p>I.Thông tin cá nhân</p>
+            <p>Xin chào! Tôi là một sinh viên có đam mê với công nghệ. Tôi đặc biệt thích tìm hiểu về lập trình Python và cách xây dựng tư duy logic. Hiện tôi đang là sinh viên ngành AIoT của Học Viện Công Nghệ Bưu Chính Viễn Thông.</p>
+            <p>Họ và tên: Đào Ngọc Quỳnh Anh . Ngày sinh: 15/4/2007</p>
+            <p>Mã sinh viên: B25DCTV006</p>
+            <p>Lớp: B25CQTV02-B</p>
+            <p>Sở thích:.....</p>
+        </div>
+
+        <div id="du-an" class="noidung-tab">
+            <h2>Dự án nổi bật</h2>
+            <ul style="text-align: left; display: inline-block;">
+                <li><strong>Game Python:</strong> Một tựa game nhỏ tôi tự code logic và đóng gói thành file chạy trực tiếp để chia sẻ cho bạn bè chơi thử mà không cần cài đặt môi trường.</li>
+                <li><strong>Website Cá Nhân:</strong> Chính là trang web tương tác bạn đang xem, ứng dụng các thao tác DOM trong JavaScript.</li>
+            </ul>
+        </div>
+
+        <!-- 4. Nội dung Liên hệ -->
+        <div id="lien-he" class="noidung-tab">
+            <h2>Liên hệ với tôi</h2>
+            <p>Nếu bạn muốn trao đổi thêm, hãy liên lạc qua:</p>
+            <p>📧 Email: sinhvien@stu.ptit.edu.vn</p>
+            <p>💻 GitHub: github.com/my-projects</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Thực hành DOM</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
